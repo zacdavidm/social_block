@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Social Block feature.
+ */
+
+include_once 'social_block.features.inc';
