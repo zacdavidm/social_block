@@ -10,6 +10,108 @@
 function social_block_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'bean-social_media-field_call_link'
+  $field_instances['bean-social_media-field_call_link'] = array(
+    'bundle' => 'social_media',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_call_link',
+    'label' => 'Call Link',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'required',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 0,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'bean-social_media-field_contact_link'
+  $field_instances['bean-social_media-field_contact_link'] = array(
+    'bundle' => 'social_media',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_contact_link',
+    'label' => 'Contact Link',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'required',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'bean-social_media-field_facebook_link'
   $field_instances['bean-social_media-field_facebook_link'] = array(
     'bundle' => 'social_media',
@@ -30,6 +132,7 @@ function social_block_field_default_field_instances() {
     'label' => 'Facebook Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -43,6 +146,7 @@ function social_block_field_default_field_instances() {
       'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -78,6 +182,7 @@ function social_block_field_default_field_instances() {
     'label' => 'Instagram Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -91,6 +196,7 @@ function social_block_field_default_field_instances() {
       'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -131,6 +237,7 @@ function social_block_field_default_field_instances() {
     'label' => 'Newsletter Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -144,6 +251,7 @@ function social_block_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -179,6 +287,7 @@ function social_block_field_default_field_instances() {
     'label' => 'Twitter Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -192,6 +301,7 @@ function social_block_field_default_field_instances() {
       'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -209,6 +319,8 @@ function social_block_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Call Link');
+  t('Contact Link');
   t('Facebook Link');
   t('Instagram Link');
   t('Newsletter Link');
